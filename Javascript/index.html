@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+<head>
+    <title>My First Webpage</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style type="text/css">
+
+    #Circle {
+        float: left;
+        border-radius: 100px;
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        text-align: center;
+
+    }
+
+    #Circle2 {
+        float: left;
+        border-radius: 100px;
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+    }
+
+    #Circle3 {
+        float: left;
+        border-radius: 100px;
+        width: 200px;
+        height: 200px;
+        background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
+        background-image: -webkit-radial-gradient(45px 45px, circle cover, yellow, orange);
+        background-image: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
+
+        -webkit-animation-name: spin;
+        -webkit-animation-duration: 3s; /* 3 seconds */
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+    }
+
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+        }
+
+    #Circle4 {
+        float: left;
+        border-radius: 100px;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+    }
+    </style>
+
+</head>
+
+<body>
+<div>
+    <a name="top"></a>
+    <h1>This is a huge header</h1>
+    <h2>This one's a little smaller</h2>
+    <h3>And smaller still...</h3>
+    <h4>And so on</h4>
+    <h5>And on</h5>
+    <h6>Do you really want to go smaller than this??</h6>
+
+    <p>My first line goes here.<br />Extra text!</p>
+    <hr />
+    <p id="paragraph">A second line here.</p>
+    <p><strong>This is a bold piece of text.</strong>This word will be in <em>italics</em>. I want this <u>word</u> to be underlined. <strike>This line is wrong.</strike></p>
+
+    <h2>My favourite foods</h2>
+    <ul>
+        <li>Pizza</li>
+        <li>Chocolate</li>
+        <li>Curry</li>
+    </ul>
+
+    <h2>My favourite times of day</h2>
+    <ol>
+        <li>Morning</li>
+        <li>bed time</li>
+        <li>Dinner time</li>
+    </ol>
+
+    <img src="Users/Simon01/Documents/Amari/Website/amendments/amari intro 320x320.png" width="200" height="200">
+
+    <form>
+        <input type="email" placeholder="type here..." name="email"><!-- value="example" -->
+        <br /><br />
+        <textarea name="textarea">My content goes here</textarea>
+        <br><br>
+        <select>
+            <option>Select an option...</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+        <br /><br />
+        <input type="radio"name="colour">Red
+        <input type="radio" name="colour">Green
+        <br><br>
+        <input type="checkbox" name="dog" value="1">Dog
+        <input type="checkbox">Cat
+        <input type="checkbox">Fish
+        <br>
+        <input type="submit" value="Click me!">
+    </form>
+
+    <a href="http://www.google.com">Google</a>
+    <a href="#top">Back to top</a>
+
+    <table>
+        <tr><th>Names</th><th>Age</th><th>Gender</th></tr>
+        <tr><td>Rob</td><td>33</td><td>Male</td></tr>
+        <tr><td>Kirsten</td><td>34</td><td>Female</td></tr>
+        <tr><td>Tom</td><td>3</td><td>Male</td></tr>
+    </table>
+
+    <h3>HTML entities</h3>
+    &lt;a> &#60;a>
+    1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2
+    &lt;&lt;&lt;&lt;&lt;&lt;&lt;
+    &gt;&gt;&gt;&gt;&gt;&gt;&gt;
+    &amp;&amp;&amp;&amp;&amp;&amp;
+    &cent;&cent;&cent;&cent;&cent;
+    &pound;&pound;&pound;&pound;
+    &yen;&yen;&yen;&yen;&yen;&yen;
+    &euro;&euro;&euro;&euro;&euro;
+    &copy;&copy;&copy;&copy;&copy;
+    &reg;&reg;&reg;&reg;&reg;&reg;
+
+    <br><br>
+
+    <iframe src="http://amarionline.org" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TGsZzI0GBk4" frameborder="0" allowfullscreen></iframe>
+</div>
+<hr>
+<div>
+    <h2>Javascript</h2>
+    <!-- Buttons -->
+    <button onclick="alert('Hi')">Click me!</button>
+    <button id="myButton">You know you want to click me...</button>
+    <button id="textChanger">Change div text</button>
+    <button id="textAppender">Append some text</button>
+    <button id="textCreator">Create some text</button>
+    <input id="myInput" type="text" value="Write in here!">
+    <button id="stylesChanger">Change the text!</button>
+    <button id="Names">Name</button>
+
+    <!-- Divs -->
+    <div id="firstDiv">This is some text</div>
+    <div id="secondDiv">Javascript is...</div>
+    <div id="emptyDiv"></div>
+    <p id="text">A second alert using Javascript</p>
+    <div id="Circle">Click me!</div>
+    <div id="Circle2"></div>
+    <div id="Circle3"></div>
+    <div id="Circle4"></div>
+    <div id="changer">Write what you want to see</div>
+    <div id="array"></div>
+    <p>What is the weather like?</p>
+    <input id="weather">
+    <button id="weatherButton">Submit</button>
+    <p>How many fingers am I holding up?</p>
+    <input id="answer">
+    <button id="fingers">Submit</button>
+    <p id="arrayString"></p>
+
+    <!-- Javascript -->
+    <script type="text/javascript">
+
+        // This is a comment
+        alert("Page loaded!")
+        alert(document.getElementById("text").innerHTML="The second alert has been changed");
+
+        /* This is multi-line comment */
+        document.getElementById("myButton").onclick=function() {
+            alert("Hello again!")
+        }
+        //Change text button
+        document.getElementById("textChanger").onclick=function() {
+            document.getElementById("firstDiv").innerHTML="This is awesome!";
+        }
+
+        //Append text button
+        document.getElementById("textAppender").onclick=function() {
+            document.getElementById("secondDiv").innerHTML=document.getElementById("secondDiv").innerHTML + "a fully functional language";
+        }
+
+        //Create images
+        document.getElementById("textCreator").onclick=function() {
+            document.getElementById("emptyDiv").innerHTML="<ul><li>Image 1</li><li>Image 2</li></ul>";
+        }
+
+        //Circle disappear
+        document.getElementById("Circle").onclick=function() {
+            document.getElementById("Circle").style.display="none";
+        }
+
+        //Variables
+        var newText=document.getElementById("myInput").value;
+            document.getElementById("stylesChanger").onclick=function() {
+            newText=document.getElementById("myInput").value;
+            document.getElementById("changer").innerHTML=newText;
+        }
+
+        //Arrays
+        var myArray= new Array();
+        myArray[0]="Simon";
+        myArray[1]="Peter";
+
+        //log arrays in developer tools
+        console.log(myArray);
+
+        //short way of adding arrays
+        myOtherArray=["rain", "sunshine"];
+
+        //push array onto list
+        myOtherArray.push("snow")
+
+        //remove elements from array - remove 1st item once
+        myOtherArray.splice(1, 1)
+
+        //Add just before array 1, remove 0, add hail
+        myOtherArray.splice(1, 0, "hail")
+
+        console.log(myOtherArray);
+        console.log(myOtherArray.length);
+
+        document.getElementById("Names").onclick=function() {
+            document.getElementById("array").innerHTML=myArray[0];
+        }
+
+        //If statement
+        var x=1;
+
+        if (x == 1) {
+            alert("x is 1!")
+        } else {
+            alert("x is not 1!")
+        }
+
+        //If statement - weather
+        document.getElementById("weatherButton").onclick=function() {
+            if (document.getElementById("weather").value=="rain") {
+                alert ("It's raining");
+            } else {
+                alert ("It's not raining");
+            }
+        }
+
+        //Javascript game
+        var x=5
+        alert(x+65)
+        alert(Math.pow(x,3));//x to the power of 3?
+        alert(Math.pow(5,2));//5 squared
+        alert(Math.random());//Random number
+
+        document.getElementById("fingers").onclick=function() {
+
+            var x=Math.random();
+            x=6*x;//Out of 6 - including 5
+            x=Math.floor(x);//Floor rounds x down to the nearest whole number below x
+            if (x == document.getElementById("answer").value) {
+                alert("That's correct!")
+            } else {
+                alert("That's wrong! The number is "+x)
+            }
+
+        }
+
+        //For Loop /* counter variable */  /* less than 5 */  /* increase i by one */
+        for (var i = 1; i < 5; i ++; ) {
+            alert(i);
+        }
+
+        var arrayLoop = ["pizza", "chocolate", "crisps"];
+            for (var i = 0; i < arrayLoop.length; i++) {
+                alert(arrayLoop[i]);
+            }
+
+        //Loop - items in an array
+        var arrayString="";
+            for (var i=0; i<arrayLoop.length; i++) {
+                arrayString=arrayString+arrayLoop[i]+" ";
+            }
+        document.getElementById("arrayString").innerHTML=arrayString;
+
+        //Function
+        function adding(a, b) {
+            alert (a+b);
+        }
+        adding(3, 4);
+
+        function adding2 (a, b) {
+            return (a + b);
+        }
+        document.getElementById("paragraph").innerHTML = adding2(3, 54);
+    </script>
+
+</div>
+</body>
+</html>
