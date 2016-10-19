@@ -1,0 +1,428 @@
+<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 50px;
+        background-color: #2980b9;
+        border-radius: 1em;
+        font-family: georgia;
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+        background-color: #2980b9;
+    }
+
+    a:hover {
+        font-size: 50px;
+    }
+    @media (max-width: 700px) {
+        body {
+            background-color: #fff;
+        }
+        div {
+            width: auto;
+            margin: 0 auto;
+            border-radius: 0;
+            padding: 1em;
+        }
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        padding: 0;
+        /*margin: 0;*/
+    }
+
+    .large {
+        font-size: 300%;
+    }
+
+    #blue {
+        color: blue;
+    }
+
+    #green {
+        color: green;
+    }
+
+    .underline {
+        text-decoration: underline;
+        color: red;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .green-sea {
+        background-color: #16a085;
+    }
+
+    .orange {
+        background-color: #e67e22;
+    }
+
+    .pomegranate {
+        background-color: #c0392b;
+    }
+
+    .midnight-blue {
+        background-color: #2c3e50;
+    }
+
+    hr.style-six {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: #34495e;
+    }
+
+    hr.style-eight {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+    }
+    hr.style-eight:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+    }
+
+    hr.style-seven {
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    }
+    hr.style-seven:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+    }
+
+    .green-box {
+        float: left;
+        width: 280px;
+        height: 100px;
+        background-color: #2ecc71;
+    }
+
+    .blue-box {
+        float: right;
+        width: 280px;
+        height: 100px;
+        background-color: #3498db;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .position {
+        position: relative;
+        left: 200px;
+        top: -20px;
+        background-color: #9b59b6;
+        z-index 1: 
+    }
+
+    .position-two {
+        position: absolute;
+        right: 200px;
+        top: 1600px;
+        background-color: #8e44ad;
+        z-index: 2;
+    }
+
+    .position-three {
+        width: 200px;
+        height: 250px;
+        bottom: 50px;
+        left: 50px;
+        position: fixed;
+        background-color: #913D88;
+        
+    }
+
+    .position-four {
+        position: static;
+        background-color: #BE90D4;
+    }
+
+    .margin {
+        margin: 50px 50px 50px 50px;
+        background-color: #27ae60;
+    }
+
+    .padding {
+        background-color: #e74c3c;
+        padding: 10px 10px;
+    }
+
+    .border-1 {
+        margin: 2px;
+        border: 2px black solid;
+        float: left;
+        width: 100px;
+        height: 100px;
+        background-color: #C0392B
+
+    }
+
+    .border-2 {
+        margin: 2px;
+        border: 5px black dotted;
+        float: left;
+        width: 100px;
+        height: 100px;
+        background-color: #4DAF7C;
+    }
+
+    .border-3 {
+        margin: 2px;
+        border: 2px black dashed;
+        float: left;
+        width: 100px;
+        height: 100px;
+        background-color: #19B5FE;
+    }
+
+    .border-4 {
+        margin: 2px;
+        border: 5px black double;
+        float: left;
+        width: 100px;
+        height: 100px;
+        background-color: #F4D03F;
+    }
+
+    .border-5 {
+        margin: 2px;
+        border: 2px black groove;
+        float: left;
+        width: 100px;
+        height: 100px;
+        background-color: #F27935;
+    }
+
+    .border-6 {
+        margin: 2px;
+        border: 5px black ridge;
+        float: left;
+        width: 100px;
+        height: 100px;
+        background-color: #E26A6A;
+    }
+
+    .border-7 {
+        margin: 2px;
+        border: 2px black inset;
+        float: left;
+        width: 100px;
+        height: 100px;
+        background-color: #9B59B6;
+    }
+
+    .border-8 {
+        margin: 2px;
+        border: 5px black outset;
+        border-radius: 100%;
+        float: left;
+        width: 100px;
+        height: 100px;
+        background-color: #95A5A6;
+    }
+
+    .fonts {
+        background-color: #BFBFBF;
+        clear: both;
+    }
+
+    .serif {
+        font-family: Times;
+        font-size: 30px;
+    }
+
+    .sans-serif {
+        font-family: arial;
+        font-size: 30px;
+    }
+
+    .courier {
+        font-family: courier;
+        font-size: 30px;
+    }
+
+    .palatino-linotype {
+        font-family: Palatino Linotype;
+        font-size: 30px;
+    }
+
+    .Antiqua {
+        font-family: antiqua;
+        font-size: 30px;
+    }
+
+    .palatino {
+        font-family: Palatino;
+        font-size: 30px;
+    }
+
+    .arial {
+        font-family: arial black;
+        font-size: 30px;
+    }
+
+    .comic-sans {
+        font-family: cursive;
+        font-size: 30px;
+    }
+
+    .impact {
+        font-family: impact;
+        font-size: 30px;
+    }
+
+    .lucinda {
+        font-family: lucida;
+        font-size: 30px;
+    }
+
+    .tahoma {
+        font-family: tahoma;
+        font-size: 30px;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .italic {
+        font-style: italic;
+    }
+
+    .red-box {
+        background-color: #96281B;
+    }
+
+    .align {
+        text-align: right;
+    }
+
+    .justify {
+        text-align: justify;
+        font-style: italic;
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>CSS examples</h1>
+    <p>This domain is established to be used for illustrative examples in documents. You may use this
+    domain in examples without prior coordination or asking for permission. These CSS properties apply to all div's</p>
+    <p><a href="http://www.iana.org/domains/example">More information...</a></p>
+</div>
+    <hr class="style-six">
+<div class="green-sea">
+    <p class="large">This is a class attribute. Classes can be used many times. </p>
+</div>
+    <hr>
+<div class="orange">
+    <p id="blue">This is an ID attribute. The difference between classes and ID's is that the tendency is to ony use ID for a single element within the page. Only use ID for things that will only appera on the page once. It comes in when we use javascript later on. You often use an instruction called get.elementByID. If an element has a specific ID then we know for sure that's only going to refer to one element on a page. </p>
+</div>
+    <hr class="style-eight">
+<div class="pomegranate">
+    <p>The third <span class="underline large bold">word</span> in this paragrapgh is underlined. This parargraph has multiple classes that are seperated with a space.</p>
+</div>
+    <hr>
+<div class="midnight-blue">
+    <p id="green" class="large">Classes and ID's can be used for the same tag.</p>
+</div>
+    <hr class="style-seven">
+<div class="green-box">
+    <p>Green float</p>
+</div>
+<div class="blue-box">
+    <p>Blue float</p>
+</div>
+    <p>This is the space between two floats</p>
+<div class="clear">
+    <p>This is a clearing div. Non-floated text will appear beneath all of the floated text. The purpose is to break the floats and stop floating completely.</p>
+</div>
+    <hr>
+<div class="position">
+    <p><strong>Position: relative;</strong><br><br>The z-index value is a layering tool that allows you to put one div on top another. When you have two elements with a z-index value the larger z-index vslue is going to go on top.</p>
+</div>
+<div class="position-two">
+    <p><strong>Position: absolute;</strong><br><br>This box has been taken out of the flow of the page. Every other div are ignoring the presence of this purple div. Its there but its not affecting the layout of any other elements on the page.</p>
+</div>
+<div class="position-three">
+    <p><strong>Postion: fixed;</strong><br><br>Fixed positioning is similar to absolute positioning in the sense that everything else on the page will ignore the presence of that fixed div. A fixed div is fixed relative to the browser window. Quite common in web dev to have a fixed header bar.</p>
+</div>
+<div class="position-four">
+    <p><strong>Position: static;</strong><br><br>If you don't specify a postion for any elements the browser automatically sets them as static.</p>
+</div>
+    <hr>
+<div class="margin">
+    <p>Margin - The box model and margins. A margin creates a space all around the element. In a clockwise order - top, right, bottom, left. You can assign different margins. It might be that you want to add a different margin to a div or a paragraph but you don't actually know what the existing margins are. If you just want to set the left margin use margin-left: 400px;</p>
+</div>
+<hr>
+<div class="padding">
+    <p>Padding is used to provide space inside the box away from the edges. The p tag has padding and margin already built in. When you add padding to a div or any element your actually adding to the width and height of that element. Your going to need different width's and heights.</p>
+</div>
+<hr>
+<div class="border-1"><p>2px border black solid</p></div>
+<div class="border-2"><p>5px border black dotted</p></div>
+<div class="border-3"><p>2px border black dashed</p></div>
+<div class="border-4"><p>5px border black double</p></div>
+<div class="border-5"><p>2px border black groove</p></div>
+<div class="border-6"><p>5px border black ridge</p></div>
+<div class="border-7"><p>2px border black inset</p></div>
+<div class="border-8"><p>5px border black outset</p></div>
+<hr>
+<div class="fonts"><p>There are <span class="serif">Serif</span> fonts and <span class="sans-serif">San-serif</span> fonts. Monospace fonts like <span class="courier">courier</span> which you often use when your coding because all of the characters are exactly the same width where as most other fonts are not.</p><br><br><p>There are also <span class="palatino-linotype">Palatino Linotype</span>, <span class="Antiqua">Book Antiqua</span>, <span class="palatino">Palatino</span>, <span class="arial">Arial Black</span>, <span class="comic-sans">Comic Sans</span>, <span class="impact">Impact</span>, <span class="lucinda">Lucida Sans Unicode</span>, <span class="tahoma">Tahoma</span></p><br><p>Font style includes <span class="bold">bold</span>, <span class="italic">italic</span>, <span class="underline">underline</span></p><p>The font size at 200% is twice as large. Thats a relative font size. An absolute font size is in px. The default font size is 16px. A third option is 2em. 1em is the same as 16px. </p></div>
+<hr>
+<div class="red-box">
+    <p class="align">Text-align: right;</p>
+    <p class="justify">Text-align: justify; - Justify stretches the text out so it always aligns nicely from left to right.</p>
+</div>
+<div>
+    <a href="http://www.google.com" target=_blank>Google</a>
+</div>
+</div>
+</body>
+</html>
