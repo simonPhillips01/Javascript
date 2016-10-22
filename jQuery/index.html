@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning jQuery</title>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-type" content="text/html" charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<!--<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>-->
+	<style type="text/css">
+		#circle {
+			width: 200px;
+			height: 200px;
+			background-color: green;
+			border-radius: 100px;
+		}
+
+		.square {
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			border-radius: 0px;
+			margin-top: 10px;	
+		}
+
+		#circle2 {
+			width: 200px;
+			height: 200px;
+			background-color: blue;
+			border-radius: 100px;
+			margin-top: 10px;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		.square2 {
+			width: 200px;
+			height: 200px;
+			background-color: yellow;
+			border-radius: 0px;
+			margin-top: 10px;	
+		}
+
+		#circle3 {
+			width: 200px;
+			height: 200px;
+			background-color: purple;
+			border-radius: 100px;
+		}
+
+		.square3 {
+			width: 200px;
+			height: 200px;
+			background-color: orange;
+			border-radius: 0px;
+			margin-top: 10px;	
+		}
+
+	</style>
+</head>
+<body>
+	<h1>This is some text</h1>
+	<div id="circle"></div>
+	<div class="square"></div>
+	<div id="circle2"></div>
+	<div class="square2"></div>
+	<div id="circle3"></div>
+	<div class="square3"></div>
+	<iframe src="http://www.cnn.com"></iframe>
+	<p>This is some text</p>
+	<button id="fader">Fade Out</button>
+	<button id="faderIn">Fade In</button>
+
+	<script>
+		$("#circle").click(function() {
+			alert("Circle Clicked!");
+		});
+
+		$(".square").click(function() {
+			alert("Square Clicked!");
+		});
+
+		$("h1").click(function() {
+			$("h1").html("The text has been changed!");
+		});
+
+		$("#circle2").hover(function() {
+			$("iframe").attr("src", "http://www.theguardian.co.uk");
+		});
+
+		$(".square2").click(function() {
+			alert($(".square2").css("width"));
+		});
+
+		$("div").click(function() {
+			$(this).css("width", "1250px");
+		})
+
+		$("#circle3").click(function() {
+			$("#circle3").fadeOut();
+		})
+
+		$("#fader").click(function() {
+			$("p").fadeOut(2000, function() {
+				alert("FadeOut complete!");
+			});
+		});
+
+		$("#faderIn").click(function() {
+			$("p").fadeIn();
+		})
+
+		$(".square3").click(function() {
+			$(this).animate({
+				width: "600px",
+				height: "300px",
+				borderRadius: "150px",
+				marginLeft: "350px",
+				marginTop: "50px"
+			}, 2000);
+		});
+	</script>
+
+</body>
+</html>
