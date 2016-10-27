@@ -87,7 +87,7 @@
 		echo "It failed";
 	}
 
-	$query = "SELECT `name` FROM users WHERE name='".mysqli_real_escape_string($name)."'";
+	$query = "SELECT `name` FROM users WHERE name='".mysqli_real_escape_string($link, $name)."'";
 	if ($result = mysqli_query($link, $query)) {
 		echo mysqli_num_rows($result);
 		while ($row = mysqli_fetch_array($result)) {
