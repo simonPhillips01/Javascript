@@ -1,8 +1,8 @@
 <?php 
 	session_start();
 	include("connection.php");
+	
 	$query = "SELECT * FROM users WHERE id='".$_SESSION['id']."' LIMIT 1";
-
 	$result = mysqli_query($link, $query);
 	$row = mysqli_fetch_array($result);
 	$diary = $row['diary'];
@@ -127,7 +127,6 @@
 
 </body>
 </html>
-
 
 <form method="post">
 	<input type="email" name="email" id="email" value="<?php echo addslashes($_POST['email']); ?>">
