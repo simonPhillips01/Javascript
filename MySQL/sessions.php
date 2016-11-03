@@ -1,7 +1,9 @@
 <?php 
 
-session_start();
-	$_SESSION['id']=4;
-	print_r($_SESSION);
-	//session_destroy();
+	session_start();
+	
+	$_SESSION['loginid']=4;
+	
+	echo $_SESSION['loginid'];
+	
 ?>
